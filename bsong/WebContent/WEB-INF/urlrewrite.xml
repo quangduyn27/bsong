@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+	<rule>
+		<from>/(.+)/(.+)-([0-9]+).html$</from>
+		<to>/public-detail?sid=$3</to>
+	</rule>
+
+	<rule>
+		<from>/(.+)-([0-9]+)$</from>
+		<to>/public-cat?cid=$2</to>
+	</rule>
+	<rule>
+		<from>/trang-chu/page/([0-9]+)$</from>
+		<to>/public-index?page=$1</to>
+	</rule>
+	<rule>
+		<from>/lien-he$</from>
+		<to>/public-contact</to>
+	</rule>
+	
+	<rule>
+		<from>/(.+)/page-([0-9]+)/([0-9]+)$</from>
+		<to>/public-cat?page=$2&amp;cid=$3</to>
+	</rule>
+	<rule>
+		<from>/admin-cat-edit/([0-9]+)$</from>
+		<to>/admin-cat-edit?cid=$1</to>
+	</rule>
+	<rule>
+		<from>/admin-song-edit/([0-9]+)$</from>
+		<to>/admin-song-edit?sid=$1</to>
+	</rule>
+	<rule>
+		<from>/admin-user-edit/([0-9]+)$</from>
+		<to>/admin-user-edit?uid=$1</to>
+	</rule>
+	<rule>
+		<from>/admin-contact-edit/([0-9]+)$</from>
+		<to>/admin-contact-edit?contid=$1</to>
+	</rule>
+	<rule>
+		<from>/admin-contact-email/([0-9]+)$</from>
+		<to>/admin-contact-email?contid=$1</to>
+	</rule>
+
+
+
+
+</urlrewrite>
+
